@@ -1,9 +1,17 @@
 *{
     font-family: 'Quicksand', sans-serif;
 }
+hr{
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid #737C8C;
+}
+
+
 #container {
     margin: 0px 0 0px 0;
-    text-align: left;
+    text-align: center;
+
 }
 #text {
     display: inline-block;
@@ -67,13 +75,14 @@
     text-align: center;
     padding-bottom: 20px;
     margin-top: 65px;
+    flex-direction: column;
 }
 .picture {
     display: flex;
     flex-direction: column;
     padding-left: 10px;
     padding-right: 10px;
-    width: 40%;
+    /* width: 40%; */
 }
 .main-picture{
     display: grid;
@@ -91,9 +100,7 @@
     border-radius: 50%;
     object-fit: cover;
 }
-.whats-about {
-    width: 60%;
-}
+
 
 .big-name{
     /* font-size: x-large; */
@@ -109,9 +116,37 @@
 }
 .about{
     padding-top: 5px;
-    padding-right: 20%;
+    /* padding-right: 20%; */
     text-align: justify;
+    padding-left: 15%;
+    padding-right: 15%;
 }
+
+.timeline{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.timeline-title{
+    font-size: x-large;
+    color: #737C8C;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+
+.time {
+    padding: 10px;
+}
+
+.time .year{
+    padding-left: 10px;
+    font-weight: 700;
+    color: #737C8C;
+}
+
+.time > p{
+    padding-left: 20px;
+}
+
 .main-footer{
     background-color: gainsboro;
     display: grid;
