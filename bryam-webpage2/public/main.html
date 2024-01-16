@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J6DH9L0PWM"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-J6DH9L0PWM');
+    </script>
+    <meta charset="utf-8" />
+    <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    /> -->
+    <!-- <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fuggles&family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <!-- <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Emily Arteaga</title>
+  </head>
+  <body class="my-body">
+    <!-- <noscript>You need to enable JavaScript to run this app.</noscript> -->
+    <div class="main-header">
+      <p class="header-name" onclick="parent.location='main.html'"><strong>Bryam Astudillo</strong></p>
+      <section class="main-menu">
+        <ul>
+          <li><a href="main.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </section>
+    </div>
+    <div class="main-content">
+      <div class="picture">
+        <div  class="main-picture"><img src="img/profile2.jpg" alt="my profile picture"></div>
+        <p class="big-name"><strong>Bryam Xavier Astudillo Carpio </strong></p>
+        <p class="major">Structural Engineering Ph.D. student at <br><span>Stanford University</span></p>
+      </div>
+      <div class="whats-about">
+        <p class="about">Bryam Astudillo is a Graduate Research Assistant specializing in Structural Engineering at Stanford University. With a strong focus on seismic performance and nonlinear modeling of structures, Astudillo is passionate about Performance-Based Earthquake Engineering and Seismic Resilience. He has gained valuable experience in numerical simulation and full-scale testing, including shake-table testing of a 4-story building at the E-Defense shake table. Currently, his research centers on designing resilient structures using strongback frames and force-limiting connections. Astudillo's expertise, research contributions, and commitment to seismic resilience position him as a valuable contributor to the development of low-damage seismic resilient buildings. Beyond engineering, Bryam enjoys programming, playing soccer, and cherishes spending time with family and friends.</p>
+        <div id="container">
+          <div id="text">Seismic Resilience</div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      // List of sentences
+      var _CONTENT = ["Structural Engineering", "Seismic Resilience", "Performance-Based Earthquake Engineering"];
+      
+      // Current sentence being processed
+      var _PART = 0;
+      
+      // Character number of the current sentence being processed 
+      var _PART_INDEX = 0;
+      
+      // Holds the handle returned from setInterval
+      var _INTERVAL_VAL;
+      
+      // Element that holds the text
+      var _ELEMENT = document.querySelector("#text");
+      
+      // Implements typing effect
+      function Type() { 
+        var text =  _CONTENT[_PART].substring(0, _PART_INDEX + 1);
+        _ELEMENT.innerHTML = text;
+        _PART_INDEX++;
+      
+        // If full sentence has been displayed then start to delete the sentence after some time
+        if(text === _CONTENT[_PART]) {
+          clearInterval(_INTERVAL_VAL);
+          setTimeout(function() {
+            _INTERVAL_VAL = setInterval(Delete, 10);
+          }, 1000);
+        }
+      }
+      
+      // Implements deleting effect
+      function Delete() {
+        var text =  _CONTENT[_PART].substring(0, _PART_INDEX - 1);
+        _ELEMENT.innerHTML = text;
+        _PART_INDEX--;
+      
+        // If sentence has been deleted then start to display the next sentence
+        if(text === '') {
+          clearInterval(_INTERVAL_VAL);
+      
+          // If last sentence then display the first one, else move to the next
+          if(_PART == (_CONTENT.length - 1))
+            _PART = 0;
+          else
+            _PART++;
+          _PART_INDEX = 0;
+      
+          // Start to display the next sentence after some time
+          setTimeout(function() {
+            _INTERVAL_VAL = setInterval(Type, 20);
+          }, 100);
+        }
+      }
+      
+      // Start the typing effect on load
+      _INTERVAL_VAL = setInterval(Type, 20);
+    
+    </script>
+    <div class="main-footer">
+      <p class="connect">Let's connect:</p>
+      <a href="https://www.linkedin.com/in/emilyarteagag/" target="_blank"><i class="fa fa-linkedin fa-3x aria-hidden='true' "></i></a>
+      <p class="rights">Copyright &copy; <br> Emily Arteaga Garcia <br> Last Updated: Oct 2023</p>
+    </div>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>

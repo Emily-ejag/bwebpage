@@ -1,0 +1,427 @@
+*{
+    font-family: 'Quicksand', sans-serif;
+}
+.my-body{
+    max-width: 95%;
+    height: 100%;
+    margin: 0px auto;
+    background-color: white;
+    /* border: 1px solid gainsboro; */
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 1);
+}
+.main-header{
+    max-width: screen;
+    height: auto;
+    background-color: gainsboro;
+    display: flex;
+    justify-content: space-between;
+}
+.header-name{
+    padding: 15px;
+    margin: 5px;
+    color: #737C8C;
+    font-size: larger;
+    cursor: pointer;
+}
+.main-menu{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-size: medium;
+}
+.main-menu > ul{
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    display: flex;
+    justify-content: right;
+}
+.main-menu > ul > li > a {
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    margin-right: 5px;
+    display: inline-block;
+    font-size: large;
+}
+.main-menu > ul > li > a:hover {
+    background-color: #737C8C;
+    color: white;
+}
+.main-footer{
+    background-color: gainsboro;
+    display: grid;
+}
+.connect{
+    font-size: larger;
+    padding-left: 10%;
+    padding-top: 20px;
+    padding-bottom: 0;
+    margin: 0;
+    /* margin: 15px; */
+}
+.main-footer > a{
+    /* color: #0a66c2; */
+    color: #737C8C;
+    margin: 0;
+    padding: 0;
+}
+.main-footer > a > i{
+    size: 1em;
+    /* padding-left: 50%; */
+    align-items: center;
+    /* text-decoration: none; */
+    margin: 5px;
+    justify-content: center;
+    padding-bottom: 10px;
+    display: grid;
+    margin-top: 10px;
+}
+.rights{
+  color: rgba(0, 0, 0, 0.756);
+  padding-left: 20px;
+  font-size: small;
+  margin: 0;
+  padding-bottom: 10px;
+}
+.project-name{
+    font-size: xxx-large;
+    color: #737C8C;
+    text-align: center;
+    padding-top: 15px;
+    margin-bottom: 20px;
+}
+.UI-projects{
+    /* display: grid; */
+    display: flex;
+    
+}
+.projects{
+    padding: 30px;
+    justify-content: center;
+    display: grid;
+    align-items: center;
+}
+.project-picture{
+    justify-content: center;
+    display: grid;
+    align-items: center;
+    padding: 30px;
+}
+.project-description{
+    justify-content: center;
+    display: grid;
+    align-items: center;
+    padding: 15px;
+    margin: 30px;
+    margin-top: 5px;
+}
+.project-content{
+  min-height: 700px;
+}
+
+.project-picture > img{
+    width: 200px;
+    height: auto;
+    /* opacity: 0.5; */
+}
+
+.project-picture > img:hover{
+    transform: scale(1.1);
+    opacity: 0;
+}
+
+.project-colab{
+    font-size: x-small;
+    justify-content: center;
+    display: grid;
+    align-items: center;
+    padding: 15px;
+}
+.solid{
+    border-top: 2px solid #bbb;
+}
+
+.options{
+  font-size: x-large;
+  text-align: center;
+  padding-left:20px;
+  padding-right: 20px;
+}
+
+/* cool stuff */
+.container {
+    position: relative;
+    max-width: 1160px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    margin: auto;
+  }
+  .container .box {
+    position: relative;
+    width: 250px;
+    height: 500px;
+    /* background: #000; */
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    overflow: hidden;
+    margin-right: 70px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    border-radius: 50px;
+  }
+  .container:hover .box {
+    transform: rotateY(25deg);
+  }
+  .container .box:hover ~ .box {
+    transform: rotateY(-25deg);
+    opacity: 0.5;
+  }
+  .container .box:hover {
+    transform: rotateY(0deg) scale(1.25);
+    z-index: 1;
+    box-shadow: 0 25px 40px rgba(0,0,0,0.5);
+    
+  }
+  .container .box .imgBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+  }
+  .container .box .imgBx:before {
+    content: '';
+    position: absolute;
+    border-radius: 50px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(360deg,#699690,#ffffff);
+    z-index: 1;
+    opacity: 0;
+    transition: 0.5s;
+    mix-blend-mode: multiply;
+    /* filter: blur(20px);
+   -webkit-filter: blur(50px); */
+  }
+  /* .container .box:hover .imgBx:before > img {
+    filter: blur(20px);
+   -webkit-filter: blur(50px);
+  } */
+  .container .box:hover .imgBx:before {
+    opacity: 1;
+    /* filter: blur(20px); */
+  }
+  /* .container .box:hover .imgBx: img:after {
+    filter: blur(8px);
+  -webkit-filter: blur(20px);
+  } */
+  /* .container .box .imgBx > img:hover:before {
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill; 
+    filter: blur(3px);
+   -webkit-filter: blur(3px);
+    /* opacity: 0.5; 
+    
+  } */
+  .container .box .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    /* filter: blur(3px);
+   -webkit-filter: blur(3px); */
+    /* opacity: 0.5; */
+    
+  }
+  .container .box:hover .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    filter: blur(3px);
+   -webkit-filter: blur(3px);
+    /* opacity: 0.5; */
+    
+  }
+  .container .box .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    padding: 20px;
+    align-items: flex-end;
+    box-sizing: border-box;
+  }
+  .container .box .content h2 {
+    color: #fff;
+    transition: 0.5s;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0px;
+    font-size: 20px;
+    /* border-radius: 20%; */
+    background-color: #020202af;
+    transform: translateY(350px);
+    transition-delay: 0.3s;
+  }
+  /* .container .box .content .des{
+    font-size: xx-small;
+  } */
+  .container .box:hover .content h2 {
+    transform: translateY(-110px);
+  }
+  .container .box .content p {
+    color: #fff;
+    transition: 0.5s;
+    font-size: 14px;
+    border-radius: 10%;
+    padding: 10px;
+    background-color: #020202af;
+    transform: translateY(350px);
+    transition-delay: 0.4s;
+  }
+
+  .container .box .content p >span {
+    text-decoration: underline;
+    color: #fff;
+  }
+
+  .container .box .content p >span:hover {
+    font-size: larger;
+    cursor: pointer;
+  }
+
+  .container .box:hover .content p {
+    transform: translateY(-110px);
+  }
+/* end of cool stuff */
+.chatbot{
+  display: flex;
+  font-size: large;
+}
+.guide{
+  width: 50%;
+  padding: 20px;
+  margin: 20px;
+}
+.guide .text{
+  /* padding-right: 20px; */
+  text-align: justify;
+}
+
+.image-container {
+  position: relative;
+  display: flex;
+  width: 50%; /* Set the desired image width */
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 30px;
+}
+
+.image-container img {
+  width: 100%;
+  transition: 0.5s; /* Add a smooth transition effect */
+}
+
+.overlay {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Overlay color */
+  opacity: 0; /* Initially hidden */
+  transition: 0.5s; /* Add a smooth transition effect */
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container:hover img {
+  filter: grayscale(0%); /* Remove grayscale filter on hover */
+}
+
+.image-container:hover .overlay {
+  opacity: 1; /* Show overlay on hover */
+}
+.sub-name{
+  color: #737C8C;
+  text-align: center;
+  padding-top: 20px;
+}
+.guide a{
+  text-decoration: none;
+  color: #737C8C;
+  font-size: x-large;
+}
+
+.guide a:hover{
+  text-decoration: underline;
+  color: #737C8C;
+  font-size: x-large;
+}
+
+@media screen and (max-width:700px) {
+    .main-header{
+        display: grid;
+        text-align: center;
+        justify-content: center;
+    }
+    .main-menu > ul > li > a {
+      padding: 10px;
+      font-size: medium;
+      font-size: medium;
+    }
+    div.container{
+        display: grid;
+        text-align: center;
+        justify-content: center;
+        
+    }
+    .chatbot{
+      display: grid;
+    }
+    .guide{
+      width: 80%;
+    }
+    .image-container {
+      width: 90%;
+      padding: 10px;
+      margin: 10px;
+    }
+    .image-container img {
+      width: 100%;
+    }
+    .options{
+      text-align: justify;
+      /* font-size: large; */
+    }
+    
+}
+
+@media screen and (min-width: 1501px) {
+  .image-container img {
+    width: 50%;
+    transition: 0.5s; /* Add a smooth transition effect */
+  }
+}
