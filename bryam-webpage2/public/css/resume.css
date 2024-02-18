@@ -113,7 +113,19 @@
     margin-right: 100px; */
     /* align-items: center; */
 }
-
+.conference-link{
+    font-size: 14px;
+    /* padding-left: 20px; */
+    margin-top: 5px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #717171;
+}
+.conference-link:hover{
+    background-color: #717171;
+    color: white;
+}
 .enfasis,.where, .year{
     padding-left: 20px;
     margin-top: 5px;
