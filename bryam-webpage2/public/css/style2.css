@@ -70,7 +70,7 @@
     position: fixed;
     width: 100%;
     top: 0;
-    background: none;
+    background-color: rgba(0, 0, 0, 0.600);
     z-index: 1000; /* Set a high z-index to make sure it stays on top */
     display: flex;
     justify-content: space-between;
@@ -393,6 +393,7 @@
         padding-left: 5%;
         padding-right: 5%;
         text-align: justify;
+        font-size: smaller;
     }
     .main-picture img{
         width: 250px;
@@ -403,7 +404,13 @@
     }
     .navbar{
         flex-direction: column;
-        background-color: black;
+        /* background-color: black; */
+    }
+    .navbar a{
+        margin: 0px 7px;
+    }
+    .navbar a:hover{
+        padding: 2px;
     }
     .navbar #brand {
         margin-bottom: 20px;
@@ -413,6 +420,12 @@
     }
     .major{
         margin-bottom: 25px;
+    }
+    .time{
+        padding: 5px;
+    }
+    .prev, .next{
+        padding: 7px;
     }
 }
 
