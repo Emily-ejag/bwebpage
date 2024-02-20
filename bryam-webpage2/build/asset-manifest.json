@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/bryam-webpage.git/static/css/main.f855e6bc.css",
-    "main.js": "/bryam-webpage.git/static/js/main.146b22c8.js",
-    "static/js/787.3dc152cc.chunk.js": "/bryam-webpage.git/static/js/787.3dc152cc.chunk.js",
-    "index.html": "/bryam-webpage.git/index.html",
-    "main.f855e6bc.css.map": "/bryam-webpage.git/static/css/main.f855e6bc.css.map",
-    "main.146b22c8.js.map": "/bryam-webpage.git/static/js/main.146b22c8.js.map",
-    "787.3dc152cc.chunk.js.map": "/bryam-webpage.git/static/js/787.3dc152cc.chunk.js.map"
+    "main.css": "/bryam-webpage/static/css/main.f855e6bc.css",
+    "main.js": "/bryam-webpage/static/js/main.7aae121c.js",
+    "static/js/787.3dc152cc.chunk.js": "/bryam-webpage/static/js/787.3dc152cc.chunk.js",
+    "index.html": "/bryam-webpage/index.html",
+    "main.f855e6bc.css.map": "/bryam-webpage/static/css/main.f855e6bc.css.map",
+    "main.7aae121c.js.map": "/bryam-webpage/static/js/main.7aae121c.js.map",
+    "787.3dc152cc.chunk.js.map": "/bryam-webpage/static/js/787.3dc152cc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.146b22c8.js"
+    "static/js/main.7aae121c.js"
   ]
 }
