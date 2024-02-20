@@ -3,13 +3,49 @@
 }
 .my-body{
     /* top: -20px; */
-    max-width: 95%;
+    max-width: 100%;
     height: auto;
     margin: 0px auto;
-    background-color: white;
+    /* background-color: white; */
     /* border: 1px solid gainsboro; */
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, 1);
+    /* box-shadow: 0px 0px 2px rgba(0, 0, 0, 1); */
 }
+.navbar {
+    /* position: fixed; */
+    width: 100%;
+    top: 0;
+    background: white;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    box-sizing: border-box;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .navbar a {
+    text-decoration: none;
+    color: #737C8C; /* Change the color as needed */
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: 800;
+  }
+  .navbar a:hover {
+    text-decoration: none;
+    color: white; /* Change the color as needed */
+    background-color: #717171;
+    margin: 0 15px;
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .navbar #brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #737C8C;
+  }
 .main-header{
     width: 100%;
     height: auto;
@@ -122,13 +158,14 @@
 
 .contact-details{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 }
 .contact-form{
     width: 50%;
-    padding: 30px;
+    /* padding: 30px; */
 }
-.music{
+/* .music{
     width: 50%;
     padding: 30px;
 }
@@ -136,7 +173,7 @@
     border-radius:12px;
     width: 100%;
     padding: 20px;
-}
+} */
 .contact-form  form{
     display: flex;
     flex-direction: column;
@@ -144,20 +181,43 @@
 }
 .contact-form  form input, .contact-form  form textarea{
     width: 100%;
-    padding: 15px;
+    padding: 5px;
     margin: 5px;
 }
 .contact-form form button{
     display: inline-block;
-    width: 103%;
-    padding: 15px;
+    width: 102%;
+    padding: 5px;
     margin: 5px;
     background-color: #737C8C;
     color: white;
     
 }
+.contact-form form button:hover{
+    background-color: gainsboro;
+    color: #737C8C;
+    cursor: pointer;
+}
 
-
+.social-media {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.platforms{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.platforms a {
+    color: #737C8C;
+    font-size: 50px;
+    justify-content: space-between;
+    margin: 10px; /* Add margin for spacing */
+    display: flex;
+    text-decoration: none;
+}
 
 
 
@@ -185,23 +245,35 @@
         display: flex;
         padding: 10px;
     }
+    .contact-form form{
+        width: 100%;
+    }
     .contact-form  form input, .contact-form  form textarea{
         width: 90%;
-        padding: 15px;
+        padding: 5px;
         margin: 5px;
         margin-left: 10px;
         margin-top: 10px;
+    }
+    .contact-form form button{
+        width: 90%;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .navbar #brand {
+        margin-bottom: 20px;
     }
     /* .contact-form label input,
     .contact-form label textarea,{
         object-fit: contain;
     } */
-    .music{
+    /* .music{
         width: 100%;
         padding: 0;
         display: flex;
         justify-content: center;
-    }
+    } */
 
 }
 

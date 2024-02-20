@@ -46,6 +46,7 @@
     height: 100vh;
     position: sticky;
     top: 0;
+    pointer-events: auto;
 }
 .scroll:nth-child(1) {
     background-image: url(https://images.unsplash.com/photo-1535845187615-b1ac81fb8a2b?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
@@ -389,15 +390,28 @@
     }
     .about{
         padding-top: 5px;
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 5%;
+        padding-right: 5%;
         text-align: justify;
     }
     .main-picture img{
-        width: 300px;
-        height: 300px;
+        width: 250px;
+        height: 250px;
         object-fit: cover;
         display: flex;
+        margin-top: 8vh;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .navbar #brand {
+        margin-bottom: 20px;
+    }
+    .big-name, .major{
+        font-size: x-large;
+    }
+    .major{
+        margin-bottom: 25px;
     }
 }
 

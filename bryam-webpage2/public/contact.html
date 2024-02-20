@@ -41,17 +41,14 @@
     <title>Contact</title>
   </head>
   <body class="my-body">
-    <!-- <noscript>You need to enable JavaScript to run this app.</noscript> -->
-    <div class="main-header" onclick="parent.location='main.html'">
-      <p class="header-name"><strong>Emily</strong> Arteaga-Garcia</p>
-      <section class="main-menu">
-        <ul>
-          <li><a href="main.html">Home</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </section>
+    <div class="navbar">
+      <div id="brand">Bryam Astudillo</div>
+      <div>
+        <a href="index.html" >Home</a>
+        <a href="research.html" >Research</a>
+        <a href="resume.html" >About</a>
+        <a href="contact.html" >Contact</a>
+      </div>
     </div>
     <section class="contact-details" id="responseMessage">
         <div class="contact-form">
@@ -64,6 +61,10 @@
                     Email:
                     <input type="email" name="c_email" id="c_email" placeholder="Email">
                 </label>
+                <label for="c_subject">
+                  Subject:
+                  <input type="text" name="c_subject" id="c_subject" placeholder="Subject">
+              </label>
                 <label for="c_message">
                     Message:
                     <textarea name="c_message" id="c_message" cols="30" rows="5"></textarea>
@@ -71,16 +72,32 @@
                 <button type="submit"> Send Message</button>
             </form>
         </div>
-        <div class="music">
-          <!-- <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1F0sijgNaJdgit?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> -->
+        <!-- <div class="music">
           <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5qabbKoVOkrb9T9e7j9xcq?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        </div>
+        </div> -->
     </section>
-    <div class="main-footer">
+    <section class="social-media">
+      <h3>Feel free to contact me via social media</h3>
+      <div class="platforms">
+        <a href="https://twitter.com/bastudil94" target="_blank" rel="noopener noreferrer">
+            <i class="fa fa-twitter"></i>
+        </a>
+        <a href="https://www.facebook.com/bastudil94" target="_blank" rel="noopener noreferrer">
+            <i class="fa fa-facebook"></i>
+        </a>
+        <a href="https://www.youtube.com/@bryamastudillo1767" target="_blank" rel="noopener noreferrer">
+            <i class="fa fa-youtube"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/bxastudillocarpio" target="_blank" rel="noopener noreferrer">
+            <i class="fa fa-linkedin"></i>
+        </a>
+    </div>
+    </section>
+    <!-- <div class="main-footer">
       <p class="connect">Let's connect:</p>
       <a href="https://www.linkedin.com/in/emilyarteagag/" target="_blank"><i class="fa fa-linkedin fa-3x aria-hidden='true' "></i></a>
       <p class="rights">Copyright &copy; <br> Emily Arteaga Garcia <br> Last Updated: Oct 2023</p>
-    </div>
+    </div> -->
     <!-- <div id="root"></div> -->
     <!--
       This HTML file is a template.

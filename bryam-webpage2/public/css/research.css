@@ -302,8 +302,8 @@ h1.name{
         font-size: medium;
     }
     .resume{
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 5%;
+        padding-right: 5%;
         display: block;
         text-align: justify;
         padding-bottom: 20px;
@@ -311,6 +311,15 @@ h1.name{
         /* margin-left: 100px;
         margin-right: 100px; */
         /* align-items: center; */
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .navbar #brand {
+        margin-bottom: 20px;
+    }
+    .tabs{
+        flex-direction: column;
     }
 }
 
