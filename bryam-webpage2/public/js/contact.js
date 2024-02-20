@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Perform client-side validation here if needed
 
         // Send form data to Formspree
-        fetch("https://formspree.io/f/xoqorovq", {
+        fetch("https://formspree.io/f/xkndreqd", {
             method: "POST",
             body: formData,
         })
