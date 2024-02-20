@@ -403,6 +403,7 @@
     }
     .navbar{
         flex-direction: column;
+        background-color: black;
     }
     .navbar #brand {
         margin-bottom: 20px;
