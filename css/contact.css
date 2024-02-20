@@ -264,6 +264,12 @@
     .navbar #brand {
         margin-bottom: 20px;
     }
+    .navbar a{
+        margin: 0px 7px;
+    }
+    .navbar a:hover{
+        padding: 2px;
+    }
     /* .contact-form label input,
     .contact-form label textarea,{
         object-fit: contain;

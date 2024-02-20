@@ -281,4 +281,10 @@ h1.name{
     .navbar #brand {
         margin-bottom: 20px;
     }
+    .navbar a{
+        margin: 0px 7px;
+    }
+    .navbar a:hover{
+        padding: 2px;
+    }
 }
