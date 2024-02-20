@@ -15,6 +15,21 @@
     /* border: 1px solid gainsboro; */
     /* box-shadow: 0px 0px 2px rgba(0, 0, 0, 1); */
 }
+.scroll-indicator{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+}
+
+.scroll-indicator img {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+    justify-content: center;
+    display: flex;
+    /* margin-top: 100px; */
+  }
 
 .scroll {
     display: flex;
@@ -31,6 +46,7 @@
     height: 100vh;
     position: sticky;
     top: 0;
+    pointer-events: auto;
 }
 .scroll:nth-child(1) {
     background-image: url(https://images.unsplash.com/photo-1535845187615-b1ac81fb8a2b?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
@@ -134,8 +150,8 @@
     margin: auto;
     text-align: center;
     padding-bottom: 20px;
-    margin-top: 50%px;
-    flex-direction: column;
+    /* margin-top: 50%px; */
+    /* flex-direction: column; */
     font-size: xx-large;
 }
 .picture {
@@ -170,6 +186,7 @@
     margin-bottom: 0px;
     /* text-align: center; */
     color: white;
+    margin-top: 28vh;
     /* background-color: white; */
     /* backdrop-filter: blur(20px); */
     
@@ -177,6 +194,7 @@
 .major{
     margin: 0;
     color: white;
+    margin-bottom: 100px;
     /* background-color: white; */
     /* backdrop-filter: blur(20px); */
 }
@@ -372,15 +390,28 @@
     }
     .about{
         padding-top: 5px;
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 5%;
+        padding-right: 5%;
         text-align: justify;
     }
     .main-picture img{
-        width: 300px;
-        height: 300px;
+        width: 250px;
+        height: 250px;
         object-fit: cover;
         display: flex;
+        margin-top: 8vh;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .navbar #brand {
+        margin-bottom: 20px;
+    }
+    .big-name, .major{
+        font-size: x-large;
+    }
+    .major{
+        margin-bottom: 25px;
     }
 }
 
