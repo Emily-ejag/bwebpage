@@ -208,9 +208,9 @@
     text-align: justify;
     padding-left: 15%;
     padding-right: 15%;
-    color: #737C8C;
+    color: #000000;
     backdrop-filter: blur(3px);
-    font-weight: bold;
+    font-weight: normal;
 }
 
 /* Carousel */
@@ -442,8 +442,8 @@
 @media screen and (min-width:1200px) {
     .about{
 
-        padding-left: 20%;
-        padding-right: 20%;
+        padding-left: 26%;
+        padding-right: 26%;
         font-size: large;
 
     }
