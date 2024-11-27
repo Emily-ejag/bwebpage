@@ -1,1 +1,3 @@
-bryam-webpage2/build/*
+/bryam-webpage2/build/
+/bryam-webpage2/build/
+/bryam-webpage2/node_modules/
