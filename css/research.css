@@ -118,6 +118,8 @@
 .my-resume-header{
     align-items: center;
     justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .enfasis,.where{
