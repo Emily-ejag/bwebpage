@@ -104,8 +104,8 @@
     justify-content: center; */
 }
 .resume{
-    padding-left: 18%;
-    padding-right: 18%;
+    padding-left: 12%;
+    padding-right: 12%;
     display: block;
     text-align: justify;
     padding-bottom: 20px;
@@ -218,8 +218,8 @@ h1.name{
 }
 .about{
     padding-top: 5px;
-    padding-left: 30%;
-    padding-right: 30%;
+    padding-left: 15%;
+    padding-right: 15%;
     text-align: justify;
 }
 .main-footer{
@@ -356,6 +356,46 @@ h1.name{
     }
     .tabs{
         flex-direction: column;
+    }
+    .research-btn {
+        width: 80%;
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+    .about {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .resume {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .about {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .resume {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .research-btn {
+        width: 90%;
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+    .about {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    .resume {
+        padding-left: 3%;
+        padding-right: 3%;
     }
 }
 
