@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8L4B7J2TSN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-8L4B7J2TSN');
+  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fuggles&family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/resume.css">
     <title>Resume</title>
-    <script src="js/header.js"></script>
 </head>
 <body class="my-body">
+    <div class="navbar">
+      <div id="brand">Bryam Astudillo</div>
+      <div>
+        <a href="index.html" >Home</a>
+        <a href="research.html" >Research</a>
+        <a href="resume.html" >About</a>
+        <a href="contact.html" >Contact</a>
+        <a href="tutorial.html" >Knowledge Hub</a>
+      </div>
+    </div>
     <div class="resume">
         <div class="my-resume-header">
             <h1 class="name"><strong>About</strong></h1>
@@ -103,14 +127,7 @@
           <p class="enfasis2">ASCE Student Member.</p>
         </div>
       
-        <div class="skills">
-          <h2 class="context">Other Skills</h2>
-          <p class="enfasis2"><strong>Languages: </strong>Native Spanish, Fluent English.</p>
-          <p class="enfasis2"><strong>Advanced computer and programming knowledge: </strong>Python, MATLAB, C++, Visual Basic Applications (VBA), Fortran, AutoCAD, ArcGIS</p>
-          <p class="enfasis2"><strong>MACHINE LEARNING</strong>Scikit-learn, TensorFlow, OpenCV, R, Pytorch</p>
-          <p class="enfasis2"><strong>Structural Engineering Software Packages: </strong>OpenSees, SAP2000, ETABS, Perform-3D.</p>
-          <!-- <p class="enfasis2"><strong>SOFT SKILLS</strong>Interpersonal Skills, Project Management, Leadership, Teamwork, Adaptability, Problem-Solving, Creativity  </p> -->
-        </div>
+        <div class="skills"></div>
         <div class="publications">
           <h2 class="context">Publications</h2>
           <p class="enfasis2">For an updated list of publications visit <a href="https://scholar.google.com.ec/citations?user=30ufgl0AAAAJ&hl=es" target="_blank" class="conference-link">here</a></p>
@@ -122,10 +139,6 @@
         </div>
     </div>
     
-    <!-- <div class="main-footer">
-      <p class="connect">Let's connect:</p>
-      <a href="https://www.linkedin.com/in/emilyarteagag/" target="_blank"><i class="fa fa-linkedin fa-3x aria-hidden='true' "></i></a>
-      <p class="rights">Copyright &copy; <br> Emily Arteaga Garcia <br> Last Updated: Oct 2023</p>
-    </div> -->
+    <script src="js/resume.js"></script>
   </body>
 </html>
