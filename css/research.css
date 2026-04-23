@@ -209,8 +209,8 @@ h1.name{
     color: gray;
 }
 .authors > span{
-    color: #737C8C;
-    font-weight: bold;
+    color: #0329a5;
+    font-weight:bolder;
 }
 
 .thanks{
@@ -291,6 +291,34 @@ h1.name{
 
 .publications {
     display: block; /* Initially show publications */
+}
+
+.research-btn {
+    background: linear-gradient(135deg, #737C8C 0%, #5a6270 100%);
+    color: white;
+    border: none;
+    padding: 16px 40px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(115, 124, 140, 0.3);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+}
+
+.research-btn:hover {
+    background: linear-gradient(135deg, #5a6270 0%, #3f4450 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(115, 124, 140, 0.5);
+}
+
+.research-btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(115, 124, 140, 0.4);
 }
 
 @media screen and (max-width:700px) {
