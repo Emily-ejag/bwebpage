@@ -392,8 +392,8 @@
         justify-content: center;
     }
     .main-menu > ul > li > a {
-        padding: 10px;
-        font-size: medium;
+        padding: 8px 5px;
+        font-size: 13px;
     }
     .about{
         padding-top: 5px;
@@ -401,6 +401,7 @@
         padding-right: 5%;
         text-align: justify;
         font-size: smaller;
+        line-height: 1.5;
     }
     .main-picture img{
         width: 250px;
@@ -410,17 +411,24 @@
         margin-top: 8rem;
     }
     .navbar{
-        flex-direction: column;
-        /* background-color: black; */
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 10px;
+        gap: 5px;
     }
     .navbar a{
-        margin: 0px 7px;
+        margin: 0px 3px;
+        font-size: 14px;
+        padding: 5px 8px;
     }
     .navbar a:hover{
-        padding: 2px;
+        padding: 5px 8px;
     }
     .navbar #brand {
-        margin-bottom: 20px;
+        margin-bottom: 0;
+        width: 100%;
+        font-size: 18px;
+        margin-bottom: 10px;
     }
     .big-name, .major{
         font-size: x-large;
@@ -436,6 +444,22 @@
     }
     .tutorial-frame{
         margin-top: 5.5rem;
+    }
+    .scroll {
+        height: auto;
+        min-height: 100vh;
+        padding: 20px 0;
+    }
+    .scroll-indicator {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .scroll-indicator img {
+        width: 60px;
+    }
+    .picture {
+        padding-left: 5px;
+        padding-right: 5px;
     }
 }
 
@@ -458,9 +482,54 @@
         width: 150px;
         height: 150px;
         object-fit: cover;
+        margin-top: 6rem;
     }
     .tutorial-frame{
         margin-top: 7.5rem;
+    }
+    .scroll {
+        height: auto;
+        min-height: 100vh;
+        padding: 15px 0;
+    }
+    .big-name {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    .major {
+        font-size: 13px;
+        margin-bottom: 15px;
+        line-height: 1.4;
+    }
+    .about {
+        font-size: 12px;
+        padding-left: 1%;
+        padding-right: 1%;
+        line-height: 1.6;
+    }
+    .scroll-indicator {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .scroll-indicator img {
+        width: 50px;
+    }
+    .navbar {
+        padding: 8px;
+        gap: 3px;
+    }
+    .navbar a {
+        font-size: 12px;
+        padding: 4px 6px;
+        margin: 0px 2px;
+    }
+    .navbar #brand {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+    .picture {
+        padding-left: 3px;
+        padding-right: 3px;
     }
 }
 
