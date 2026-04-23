@@ -1,0 +1,5 @@
+type,title,authors,description,doi
+dataset,E-Defense shake-table test data.,"Fahnestock, L.; Y. Qie; Astudillo, B.; J. Duncan; Z. Tao; T. Okazaki; R. Sause; J. Ricles; B. Simpson; M. Kurata; Y. Kawamata; K. Hattori",Collaborative Research: Frame-Spine System with Force-Limiting Connections for Low-Damage Seismic Resilient Buildings. DesignSafe-CI. 2025.,https://doi.org/10.17603/ds2-e159-v458
+report,Numerical Characterization and Modeling Uncertainty of Frame-Spine and Frame-Spine-FLC Full-Scale Specimens Tested at E-Defense Shake-Table.,"Astudillo, B.",Master thesis. 2022. Oregon State University, Corvallis, OR.,
+report,Modeling and Performance Analysis of a Steel Structure, considering deteriorations for collapse prediction.,"Astudillo, B.",Undergraduate Thesis. 2018. Universidad de Cuenca, Cuenca, Ecuador.,
+presentation,Preliminary numerical analysis prior to a shake-table test of a Moment Resisting Frame with strongback columns and force limiting connections.,"Astudillo, B.; Simpson B.",EERI Annual Meeting. 2021. Poster Presentation.,
